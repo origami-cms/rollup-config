@@ -17,6 +17,9 @@ const typescript= require('typescript');
 const SRC = process.env.SRC || path.resolve(process.cwd(), './src');
 const DIST = process.env.DIST || path.resolve(process.cwd(), './dist');
 const isProduction = process.env.NODE_ENV === "production";
+
+module.exports.SRC = SRC;
+module.exports.DIST = DIST;
 module.exports.isProduction = isProduction;
 
 // ---------------------------------------------------------- Default build base
